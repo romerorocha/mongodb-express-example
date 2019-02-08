@@ -1,0 +1,13 @@
+{
+  "name": "mongodb-express-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/romerorocha/mongodb-express-example.git",
+  "author": "Claudio Romero <romerolrocha@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.4.10"
+  }
+}

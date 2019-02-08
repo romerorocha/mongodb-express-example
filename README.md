@@ -30,4 +30,4 @@ docker run --name mongodb -p 27017:27017 -v $PWD/data/db:/data/db -d mongo
 
 Project creacted using **Node.js 10.15**. Older versions should be avoieded.
 
-**Yarn** package manager was used, instead of **NPM**. Both should work well, anyway.
+**Yarn** package manager was used instead of **NPM**. Both should work well, though.
