@@ -8,6 +8,20 @@ Sample project using MongoDB and Express (Node.js), to be used as a template.
 - **mongoose** (MongoDB object modeling)
 - **mocha** (Testing)
 
+## Install && Run
+
+Install all dependencies:
+
+```sh
+yarn install
+```
+
+Run test suites (requires **nodemon**)
+
+```sh
+yarn tests
+```
+
 ## MongoDB setup
 
 MongoDB should be running at `localhost:27017`

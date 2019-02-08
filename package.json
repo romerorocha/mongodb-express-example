@@ -2,12 +2,15 @@
   "name": "mongodb-express-example",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/romerorocha/mongodb-express-example.git",
-  "author": "Claudio Romero <romerolrocha@gmail.com>",
+  "scripts": {
+    "test": "nodemon --exec 'mocha --recursive'"
+  },
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
     "mocha": "^5.2.0",
-    "mongoose": "^5.4.10"
-  }
+    "mongoose": "^5.4.10",
+    "supertest": "^3.4.2"
+  },
+  "devDependencies": {}
 }
