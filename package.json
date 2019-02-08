@@ -9,8 +9,9 @@
   "dependencies": {
     "express": "^4.16.4",
     "mocha": "^5.2.0",
-    "mongoose": "^5.4.10",
-    "supertest": "^3.4.2"
+    "mongoose": "^5.4.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "supertest": "^3.4.2"
+  }
 }
