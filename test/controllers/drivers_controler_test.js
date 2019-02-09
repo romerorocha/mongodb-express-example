@@ -6,10 +6,6 @@ const mongoose = require('mongoose');
 const Driver = mongoose.model('driver');
 
 describe('Drivers controller', function() {
-  after(function(done) {
-    Driver.deleteMany({}).then(() => done());
-  });
-
   it('Post to /api/drivers creates a new driver', function(done) {
     Driver.countDocuments().then(count => {
       request(app)

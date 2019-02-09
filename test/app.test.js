@@ -8,7 +8,7 @@ describe('The express app', function() {
     request(app)
       .get('/api')
       .end(function(err, response) {
-        assert.equal(response.body.hi, 'there');
+        assert.equal(response.body.hi, 'Hi, there!');
         done();
       });
   });

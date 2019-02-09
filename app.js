@@ -1,14 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const routes = require('./routes');
-const mongoose = require('mongoose');
+const connectDB = require('./config/db');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/muber', { useNewUrlParser: true });
+connectDB();
 
 app.use(bodyParser.json());
-
 routes(app);
+
+app.use((err, req, res, next) => {
+  res.status(422).send({ error: err.message });
+});
 
 module.exports = app;
