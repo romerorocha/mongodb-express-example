@@ -8,7 +8,7 @@ Sample project using MongoDB and Express (Node.js), to be used as a template.
 - **mongoose** (MongoDB object modeling)
 - **mocha** (Testing)
 
-## Install && Run
+## Install & Run
 
 Install all dependencies:
 
