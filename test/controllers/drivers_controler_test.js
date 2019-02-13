@@ -21,7 +21,7 @@ describe('Drivers controller', function() {
   });
 
   it('PUT to /api/drivers/:id updates a driver', function(done) {
-    const driver = new Driver({ email: 'original@test.com', driving: false });
+    const driver = new Driver({ email: 'to_update@test.com', driving: false });
 
     driver.save().then(() => {
       request(app)
@@ -34,6 +34,21 @@ describe('Drivers controller', function() {
             done();
           })
         );
+    });
+  });
+
+  it('DELETE to /api/drivers/:id deletes a driver', function(done) {
+    const driver = new Driver({ email: 'to_delete@test.com' });
+
+    driver.save().then(() => {
+      request(app)
+        .delete(`/api/drivers/${driver._id}`)
+        .end(() => {
+          Driver.findOne({ email: 'to_delete@test.com' }).then(driver => {
+            assert.equal(driver, null);
+            done();
+          });
+        });
     });
   });
 });
